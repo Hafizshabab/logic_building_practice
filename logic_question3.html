@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hhhhhDocument</title>
+</head>
+<body>
+    <h1>heading</h1>
+    <script>
+
+let a;
+document.write("<br/>")
+document.write("swape")
+document.write("<br/>")
+let arr=[6,2,4,1,2,8];
+// for(  let i =0 ; i < arr.length ; i++  ){ //i=
+//     let temp=0;
+//     if( arr[i+1] < arr[i] )
+//     {// (0 < 6)
+//         temp = arr[i + 1]
+//         arr[i+1] = arr[i] //(0+1=6)
+//         arr[i] = temp
+        
+//     }
+// }
+// document.write(arr)
+ 
+// document.writeln('-----max----',max)
+for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length - 1; j++) { // yahan change kiya hai
+        if (arr[j + 1] < arr[j]) {
+            let temp = arr[j + 1];
+            arr[j + 1] = arr[j];
+            arr[j] = temp;
+        }
+    }
+}
+
+document.write(arr);
+    </script>
+</body>
+</html>
